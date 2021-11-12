@@ -1,5 +1,4 @@
 # Shop
-Homework from a course to do a Shop Online
 
 
 This project was a  for a php course I am currently attending. The site has many features, but it is not complete.
