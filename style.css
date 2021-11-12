@@ -1,0 +1,485 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.42857;
+    font-size: 14px;
+}
+
+.mainSite {
+    padding: 0;
+}
+
+.logo {
+    padding: 0;
+    max-width: 140px;
+}
+
+.logo img {
+    margin: 10px 0;
+}
+
+.search .placeholder{
+    width: 560px;
+    border: 1px solid #005bc3;
+    padding: 8px 10px 8px 15px;
+    border-radius: 17px;
+    font-size: 14px;
+}
+
+.lupa {
+    flex: 1 1 0;
+    position: relative;
+    margin-left: -37px;
+    margin-top: 8px;
+}
+
+.lupa button {
+    border: none;
+    background-color: white;
+}
+
+.lupa .searchul {
+    font-size: 20px;
+    color: #0082e6;
+    cursor: pointer;
+}
+
+.searchbox {
+    margin: 12px 0;
+    display: flex;
+    max-width: 580px;
+    padding: 0;
+}
+
+.placeholder:focus{
+    outline: none;
+}
+
+.contulMeu .user {
+    font-size: 25px;
+    margin-top: 9px;
+    color: #0082e6;
+}
+
+.contulMeu span.cont {
+    font-size: 14px;
+    color: #444;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 220px;
+    height: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.contContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 300px;
+    height: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    left: -80px;
+}
+
+.contContent p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+.usercircle {
+    float: left;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.paraUser {
+    float: left;
+    padding: 8px 0 0 10px;
+    text-align: left;
+}
+
+.dropdown-content p {
+    font-size: 12px;
+    text-decoration: none;
+    color: #222;
+    text-align: center;
+}
+
+.dropdownFooter {
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.btndropDown {
+    padding: 0 10px 0 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.textCont {
+    color: #005eb8;
+    padding-left: 15px;
+}
+
+.textCont span:hover {
+    color: #2d4faf;
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.favorite .heart {
+    font-size: 22px;
+    margin-top: 12px;
+    color: #0082e6;
+}
+
+.contulMeu, .favorite, .cosulMeu {
+    max-width: 130px;
+    padding: 0;
+    margin: 10px;
+}
+
+.favorite span.favorit {
+    font-size: 14px;
+    color: #444;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.cosulMeu .cart {
+    font-size: 25px;
+    margin-top: 9px;
+    color: #0082e6;
+}
+
+.cosulMeu span.cos {
+    font-size: 14px;
+    color: #444;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.contulMeu a:hover,
+.favorite a:hover,
+.cosulMeu a:hover {
+    text-decoration: none;
+}
+
+.blank {
+    max-width: 0;
+}
+
+.auxiliar {
+    width: 100%;
+    background-image: linear-gradient(to right, #ff1d25 5%, #a0328c 35%, #7040a4 45%, #4359c7 55%, #0082e6 70%);
+    height: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.auxiliarbox {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mainDiv {
+    position: relative;
+    background-color: #f7f7f7;
+    height: 1020px;
+}
+
+.boxCenter {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.boxPanel {
+    width: 400px;
+    margin: 20px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px #ccc;
+}
+
+.panelHeader {
+    margin-top: 25px;
+}
+
+.panelHeader h1 {
+    color: #999;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.panelBody {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.panelBody a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.formBody {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.required {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    display: block;
+    color: #495057;
+    font-size: 13px;
+    background: #fff;
+    border: 1px solid #d5dee6;
+    padding: 6px 35px 6px 10px;
+    border-radius: 21px;
+}
+
+.formBtn {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.formButtonLogin {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 8px 11px 11px 11px;
+    color: #fff;
+    position: relative;
+    font-weight: 400;
+    border: 1px solid transparent;
+    border-radius: 21px;
+    background: #0082e6;
+    height: 40px;
+    font-size: 13px;
+}
+
+.text-muted {
+    color: #999;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+}
+
+.text-hr-line {
+    min-height: 1px;
+    position: relative;
+}
+
+.text-hr-line::before {
+    left: 0;
+    top: 52%;
+    right: 0;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background: #e5e5e5;
+}
+
+.text-hr-line span {
+    padding: 0 10px;
+    background: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.facebook {
+    background: #415a94;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.btn-social {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 11px;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 21px;
+}
+
+.btn-social::before {
+    background-image: url("images/fb.png");
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 38px;
+    content: "";
+    position: absolute;
+    border-right: 1px solid rgba(255,255,255,.2);
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+}
+
+.panelBody a.facebook:hover {
+    background-color: rgb(49, 68, 113);
+    color: #fff;
+}
+
+.google {
+    background: #cf553d;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.btn-social2 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 11px;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 21px;
+}
+
+.btn-social2::before {
+    background-image: url("images/google.png");
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 38px;
+    content: "";
+    position: absolute;
+    border-right: 1px solid rgba(255,255,255,.2);
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+}
+
+.panelBody a.google:hover {
+    background-color: rgb(174, 65, 43);
+    color: #fff;
+}
+
+.apple {
+    background: #000;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.btn-social3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 11px;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 21px;
+}
+
+.btn-social3::before {
+    background-image: url("images/apple.png");
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 38px;
+    content: "";
+    position: absolute;
+    border-right: 1px solid rgba(255,255,255,.2);
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+}
+
+.panelBody a.apple:hover {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    color: #000;
+}
+
+.text-center a {
+    font-weight: 600;
+    color: #0082e6;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    color: rgb(64, 130, 206);
+}
+
+.boxFooter {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    padding-bottom: 10px;
+}
+
+.footerBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+    text-align: center;
+}
+
+.mainDiv {
+    position: relative;
+    background-color: #f7f7f7;
+    height: 1020px;
+}
